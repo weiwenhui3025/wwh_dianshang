@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:queryHint="@string/tishi"/>
+
+    <com.youth.banner.Banner
+        android:id="@+id/home_ban"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="40dp">
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:text="居家"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="餐厨"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="配件"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="服装"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="志趣"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#efefef"/>
+</LinearLayout>

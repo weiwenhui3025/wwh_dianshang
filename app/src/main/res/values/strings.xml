@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Copy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tishi">商品搜索，共239款好物</string>
+</resources>
