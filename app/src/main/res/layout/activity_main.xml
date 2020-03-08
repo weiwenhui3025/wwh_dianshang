@@ -1,54 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/tbr"
-        app:title="仿网易严选"
-        android:background="@android:color/white"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-    <RadioGroup
-        android:id="@+id/rg"
-        android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
-        <RadioButton
-            android:id="@+id/home_btn"
-            style="@style/layout_RadioButton"
-            android:drawableTop="@drawable/home"
-            android:text="首页" />
-        <RadioButton
-            android:id="@+id/subject_btn"
-            style="@style/layout_RadioButton"
-            android:drawableTop="@drawable/subject"
-            android:text="专题" />
-        <RadioButton
-            android:id="@+id/classif_btn"
-            style="@style/layout_RadioButton"
-            android:drawableTop="@drawable/classif"
-            android:text="分类" />
-        <RadioButton
-            android:id="@+id/shoppingcart_btn"
-            style="@style/layout_RadioButton"
-            android:drawableTop="@drawable/cart"
-            android:text="购物车" />
-        <RadioButton
-            android:id="@+id/my_btn"
-            style="@style/layout_RadioButton"
-            android:drawableTop="@drawable/my"
-            android:text="我的" />
-    </RadioGroup>
     <FrameLayout
-        android:id="@+id/vp"
-        android:layout_above="@id/rg"
-        android:layout_below="@id/tbr"
+        android:id="@+id/frame"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"></FrameLayout>
 
-</RelativeLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationview"
+        android:layout_width="match_parent"
+        app:menu="@menu/navigation"
+        app:labelVisibilityMode="labeled"
+        android:layout_height="60dp"></com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>
