@@ -25,6 +25,10 @@ android {
         //生成源文件的路径。默认源文件目录是在build目录中的(build/generated/source/greendao)
 //        targetGenDir 'src/main/java'
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -54,4 +58,7 @@ dependencies {
     implementation 'q.rorbin:VerticalTabLayout:1.2.5'
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation 'org.greenrobot:greendao-generator:3.2.2'
+
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
 }
